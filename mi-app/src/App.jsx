@@ -1,24 +1,24 @@
-import { Routes, Route } from "react-router-dom"
-import Navbar from "./components/Navbar"
-import Login from "./pages/Login"
-import Register from "./pages/Register"
-import Users from "./pages/Users"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Navbar from "./Navbar";
+import Login from "./Login";
+import Register from "./Register";
+import Usuario from "./Usuario";
 
 function App() {
-
   return (
-    <div>
+    <BrowserRouter>
 
       <Navbar />
 
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/users" element={<Users />} />
+        <Route path="/usuario" element={<Usuario />} />
       </Routes>
 
-    </div>
-  )
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
