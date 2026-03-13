@@ -3,6 +3,7 @@ import InicioRB from "./InicioRB"
 import CardRB from "./CardRB"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { Container, Button } from "react-bootstrap"
+import Home from "./home"
 
 
 function App() {
@@ -21,11 +22,8 @@ function App() {
             <Route
               path="/" element={
                 <>
-                  <InicioRB />
-                  <br />
-                  <InicioRB />
-                  <br />
-                  <CardRB />
+                  <Home/>
+          
                 </>
               }
             />
